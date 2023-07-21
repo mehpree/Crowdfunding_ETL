@@ -66,7 +66,6 @@ o	Clean and then export the DataFrame as contacts.csv and save it to your GitHub
 4.	Check that your final DataFrame resembles the one in the following image:
 https://static.bc-edx.com/data/dl-1-2/m13/lms/img/campaign_DataFrame.png
 
- 
 ### Create the Crowdfunding Database
 1.	Inspect the four CSV files, and then sketch an ERD of the tables by using [QuickDBDLinks](QuickDatabaseDiagrams.com).
 2.	Use the information from the ERD to create a table schema for each CSV file.
@@ -77,6 +76,7 @@ Note: Remember to specify the data types, primary keys, foreign keys, and other 
 6.	Verify the table creation by running a SELECT statement for each table.
 7.	Import each CSV file into its corresponding SQL table.
 8.	Verify that each table has the correct data by running a SELECT statement for each.
+   
 ### Hints
 •	To split each "category & sub-category" column value into "category" and "subcategory" column values, use df[["new_column1","new_column2"]] = df["column"].str.split(). Make sure to pass the correct parameters to the split() function.
 •	To get the unique category and subcategory values from the "category" and "subcategory" columns, create a NumPy array where the array length equals the number of unique categories and unique subcategories from each column. For information about how to do so, see [numpy.arange] (numpy.arange — NumPy v1.25 Manual). in the NumPy documentation.
