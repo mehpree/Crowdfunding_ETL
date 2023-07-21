@@ -18,10 +18,12 @@ https://static.bc-edx.com/data/dl-1-2/m13/lms/img/category_DataFrame.png
 o	A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories.
 o	A "subcategory" column that contains only the subcategory titles.
 o	The following image shows this subcategory DataFrame:
-https://static.bc-edx.com/data/dl-1-2/m13/lms/img/subcategory_DataFrame.png
+
+![image](https://github.com/mehpree/Crowdfunding_ETL/assets/131678606/db2db31b-213c-4795-9aa2-d50cba05bdcd)
+
 
  
-4.	Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
+5.	Export the subcategory DataFrame as subcategory.csv and save it to your GitHub repository.
 ### Create the Campaign DataFrame
 1.	Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
 o	The "cf_id" column
@@ -39,7 +41,8 @@ o	The "deadline" column, renamed to "end_date" and with the UTC times converted 
 o	The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
 o	The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 o	The following image shows this campaign DataFrame:
-https://static.bc-edx.com/data/dl-1-2/m13/lms/img/subcategory_DataFrame.png
+![image](https://github.com/mehpree/Crowdfunding_ETL/assets/131678606/be51e729-f0e9-4f32-9b8c-9e2a5400edd6)
+
 
  
 2.	Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
@@ -64,7 +67,9 @@ o	Convert the "contact_id" column to the integer type.
 o	Split each "name" column value into a first and a last name, and place each in a new column.
 o	Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
 4.	Check that your final DataFrame resembles the one in the following image:
-https://static.bc-edx.com/data/dl-1-2/m13/lms/img/campaign_DataFrame.png
+![image](https://github.com/mehpree/Crowdfunding_ETL/assets/131678606/9a964a8c-618c-4378-b93a-1119c1b8fd7a)
+
+
 
 ### Create the Crowdfunding Database
 1.	Inspect the four CSV files, and then sketch an ERD of the tables by using [QuickDBDLinks](QuickDatabaseDiagrams.com).
