@@ -3,46 +3,46 @@
 
 
 CREATE TABLE "category" (
-    "category_id" object   NOT NULL,
-    "category" object   NOT NULL,
+    "category_id" VARCHAR   NOT NULL,
+    "category" VARCHAR   NOT NULL,
     CONSTRAINT "pk_category" PRIMARY KEY (
         "category_id"
      )
 );
 
 CREATE TABLE "subcategory" (
-    "subcategory_id" object   NOT NULL,
-    "subcategory" object   NOT NULL,
+    "subcategory_id" VARCHAR   NOT NULL,
+    "subcategory" VARCHAR   NOT NULL,
     CONSTRAINT "pk_subcategory" PRIMARY KEY (
         "subcategory_id"
      )
 );
 
 CREATE TABLE "contacts" (
-    "contact_id" int64   NOT NULL,
-    "first_name" object   NOT NULL,
-    "last_name" object   NOT NULL,
-    "email" object   NOT NULL,
+    "contact_id" INT   NOT NULL,
+    "first_name" VARCHAR   NOT NULL,
+    "last_name" VARCHAR   NOT NULL,
+    "email" VARCHAR   NOT NULL,
     CONSTRAINT "pk_contacts" PRIMARY KEY (
         "contact_id"
      )
 );
 
 CREATE TABLE "campaign" (
-    "cf_id" int64   NOT NULL,
-    "contact_id" int64   NOT NULL,
-    "company_name" object   NOT NULL,
-    "description" object   NOT NULL,
-    "goal" float64   NOT NULL,
-    "pledged" float64   NOT NULL,
-    "outcome" object   NOT NULL,
-    "backers_count" int64   NOT NULL,
-    "country" object   NOT NULL,
-    "currency" object   NOT NULL,
-    "launched_date" object   NOT NULL,
-    "end_date" object   NOT NULL,
-    "category_id" object   NOT NULL,
-    "subcategory_id" object   NOT NULL,
+    "cf_id" INT   NOT NULL,
+    "contact_id" INT   NOT NULL,
+    "company_name" VARCHAR   NOT NULL,
+    "description" VARCHAR   NOT NULL,
+    "goal" DOUBLE PRECISION   NOT NULL,
+    "pledged" DOUBLE PRECISION   NOT NULL,
+    "outcome" VARCHAR   NOT NULL,
+    "backers_count" INT   NOT NULL,
+    "country" VARCHAR   NOT NULL,
+    "currency" VARCHAR   NOT NULL,
+    "launched_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
+    "category_id" VARCHAR   NOT NULL,
+    "subcategory_id" VARCHAR   NOT NULL,
     CONSTRAINT "pk_campaign" PRIMARY KEY (
         "cf_id"
      )
